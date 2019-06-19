@@ -1,0 +1,24 @@
+Friday, 14th June 2019
+
+another engine to read database from my SQL: sqlalchemy (sqlalchemy.org)
+converting data from database SQL to dataframe pandas
+
+# Creating new SQL database:
+1. Activate mySQL from terminal
+2. Create SQL database first
+    create database fauna;
+    use fauna;
+    create table aves(
+    -> id int auto_increment,
+    -> nama varchar(100) default 'no name',
+    -> usia int default 0,
+    -> primary key (id)
+    -> );
+    describe aves;
+    insert into aves (nama, usia) values
+    -> ('Ayam', 2),
+    -> ('Merpati', 3),
+    -> ('Merak', 4),
+    -> ('Bebek', 5);
+    select * from aves;
+
